@@ -110,7 +110,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 ```
 next we need to regenerate the grub config so that when we boot we can boot into arch
 ```
-grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 #### Rebooting your system
